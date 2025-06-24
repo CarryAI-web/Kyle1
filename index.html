@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nutrition Risks for Elders</title>
+  <title>Valorant Agents Guide</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @keyframes fadeIn {
@@ -11,14 +11,14 @@
       to { opacity: 1; transform: translateY(0); }
     }
     .fade-in {
-      animation: fadeIn 1s ease-out forwards;
+      animation: fadeIn 2s ease-out forwards;
     }
     .card-hover {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .card-hover:hover {
       transform: translateY(-10px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     }
     .btn {
       transition: background-color 0.3s ease, transform 0.2s ease;
@@ -26,211 +26,425 @@
     .btn:hover {
       transform: scale(1.05);
     }
+    .agent_img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-left: 10px;
+    }
   </style>
 </head>
-<body class="bg-gradient-to-r from-green-100 to-blue-100 font-sans">
+<body class="bg-gradient-to-r from-gray-900 to-red-700 font-sans">
   <!-- Header -->
-  <header class="bg-green-600 text-white py-6 text-center">
-    <h1 class="text-4xl font-bold fade-in">Nutrition Risks for Elders</h1>
-    <p class="mt-2 text-lg fade-in" style="animation-delay: 0.3s;">Understanding Harmful Nutrients in Foods</p>
+  <header class="bg-gray-800 text-white py-6 text-center">
+    <h1 class="text-4xl font-bold fade-in">Valorant Agents Guide</h1>
+    <p class="mt-2 text-lg fade-in" style="animation-delay: 0.3s;">Explore the Agents of Valorant and Their Abilities</p>
   </header>
 
   <!-- Main Content -->
   <main class="max-w-6xl mx-auto p-6">
     <!-- Introduction -->
     <section class="mb-12 text-center" id="introduction">
-      <h2 class="text-3xl font-semibold text-green-800 mb-4 fade-in" style="animation-delay: 0.6s;">Why Nutrition Matters for Elders</h2>
-      <p class="text-lg text-gray-700 fade-in" style="animation-delay: 0.9s;">
-        Proper nutrition is vital for older adults to maintain health and vitality. However, certain foods contain harmful nutrients that can increase the risk of serious diseases like heart disease, diabetes, and hypertension. This guide explores dangerous nutrients found in fruits, vegetables, meats, and junk foods, helping elders make informed dietary choices to support long-term well-being.
+      <h2 class="text-3xl font-semibold text-red-500 mb-4 fade-in" style="animation-delay: 0.6s;">What is Valorant?</h2>
+      <p class="text-lg text-gray-300 fade-in" style="animation-delay: 0.9s;">
+        Valorant is a 5v5 tactical first-person shooter by Riot Games, combining precise gunplay with unique agent abilities. With 27 agents across four roles—Duelists, Initiators, Sentinels, and Controllers—players craft strategic team compositions to dominate matches. Each agent offers distinct skills, from aggressive fragging to defensive utility, shaping the battlefield in ranked and professional play.
       </p>
     </section>
 
-    <!-- Food Categories -->
+    <!-- Agent Categories -->
     <section class="mb-12 text-center" id="categories">
-      <h2 class="text-3xl font-semibold text-green-800 mb-6 fade-in" style="animation-delay: 1.2s;">Explore Food Categories</h2>
+      <h2 class="text-3xl font-semibold text-red-500 mb-6 fade-in" style="animation-delay: 1.2s;">Agent Roles</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <a href="#fruits" class="bg-yellow-400 text-white py-4 rounded-lg btn card-hover fade-in" style="animation-delay: 1.5s;">Fruits</a>
-        <a href="#vegetables" class="bg-green-400 text-white py-4 rounded-lg btn card-hover fade-in" style="animation-delay: 1.8s;">Vegetables</a>
-        <a href="#meats" class="bg-red-400 text-white py-4 rounded-lg btn card-hover fade-in" style="animation-delay: 2.1s;">Meats</a>
-        <a href="#junkfood" class="bg-purple-400 text-white py-4 rounded-lg btn card-hover fade-in" style="animation-delay: 2.4s;">Junk Food</a>
+        <a href="#duelists" class="bg-red-500 text-white py-4 rounded-lg btn card-hover fade-in" style="animation-delay: 1.5s;">Duelists</a>
+        <a href="#initiators" class="bg-blue-500 text-white py-4 rounded-lg btn card-hover fade-in" style="animation-delay: 1.8s;">Initiators</a>
+        <a href="#sentinels" class="bg-green-500 text-white py 4 rounded-lg btn card-hover fade-in" style="animation-delay: 2.1s;">Sentinels</a>
+        <a href="#controllers" class="bg-yellow-500 text-white py-4 rounded-lg btn card-hover fade-in" style="animation-delay: 2.4s;">Controllers</a>
       </div>
     </section>
 
-    <!-- Fruits Section -->
-    <section class="mb-12 hidden" id="fruits">
-      <h2 class="text-3xl font-semibold text-green-800 mb-6 text-center fade-in">Harmful Nutrients in Fruits</h2>
+    <!-- Duelists Section -->
+    <section class="mb-12 hidden" id="duelists">
+      <h2 class="text-3xl font-semibold text-red-500 mb-6 text-center fade-in">Duelists</h2>
+      <p class="text-lg text-gray-300 mb-6 text-center">Duelists lead aggressive plays, securing kills and creating space for their team.</p>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Excess Sugars</h3>
-          <p class="text-gray-600 mb-2">Ex: Dried fruits, canned fruits in syrup</p>
-          <p class="text-gray-600">Risks: Type 2 diabetes, obesity</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-red-500">Jett</h3>
+            <img src="jett.png" alt="Jett" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Cloudburst (C, 200):</b> Throws a smoke cloud to obscure vision.</li>
+            <li><b>Updraft (Q, 150):</b> Propels Jett upward for high ground.</li>
+            <li><b>Tailwind (E, Free):</b> Dashes in movement direction (2 kills recharge).</li>
+            <li><b>Blade Storm (X, 7):</b> Equips deadly throwing knives.</li>
+          </ul>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Pesticide Residues</h3>
-          <p class="text-gray-600 mb-2">Ex: Non-organic apples, grapes</p>
-          <p class="text-gray-600">Risks: Neurological issues, cancer</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-red-500">Phoenix</h3>
+            <img src="phoenix.png" alt="Phoenix" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Hot Hands (C, 200):</b> Fireball damages enemies, heals Phoenix.</li>
+            <li><b>Blaze (Q, 150):</b> Fire wall blocks vision, damages others.</li>
+            <li><b>Curveball (E, 100):</b> Curving flashbang blinds (2 kills recharge).</li>
+            <li><b>Run it Back (X, 6):</b> Respawns at starting point after death.</li>
+          </ul>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">High Fructose</h3>
-          <p class="text-gray-600 mb-2">Ex: Mangoes, pineapples</p>
-          <p class="text-gray-600">Risks: Fatty liver disease</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-red-500">Raze</h3>
+            <img src="raze.png" alt="Raze" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Boom Bot (C, 200):</b> Bot chases and explodes on enemies.</li>
+            <li><b>Blast Pack (Q, 200):</b> Explosive for damage or mobility.</li>
+            <li><b>Paint Shells (E, Free):</b> Cluster grenade for area damage (1 kill recharge).</li>
+            <li><b>Showstopper (X, 8):</b> Rocket launcher for massive damage.</li>
+          </ul>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Oxalates</h3>
-          <p class="text-gray-600 mb-2">Ex: Starfruit, rhubarb</p>
-          <p class="text-gray-600">Risks: Kidney stones</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-red-500">Reyna</h3>
+            <img src="reyna.png" alt="Reyna" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Leer (C, 250):</b> Nearsight orb blinds enemies looking at it.</li>
+            <li><b>Devour (Q, 200):</b> Consumes soul orb to heal (kill/assist).</li>
+            <li><b>Dismiss (E, 200):</b> Consumes soul orb for intangibility (kill/assist).</li>
+            <li><b>Empress (X, 6):</b> Boosts speed, fire rate, and soul orb effects.</li>
+          </ul>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Allergens</h3>
-          <p class="text-gray-600 mb-2">Ex: Citrus fruits, strawberries</p>
-          <p class="text-gray-600">Risks: Allergic reactions</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-red-500">Yoru</h3>
+            <img src="yoru.png" alt="Yoru" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Blindside (C, 250):</b> Flashbang detonates on impact.</li>
+            <li><b>Gatecrash (Q, 200):</b> Teleport tether for repositioning.</li>
+            <li><b>Fakeout (E, Free):</b> Decoy mimics footsteps (1 kill recharge).</li>
+            <li><b>Dimensional Drift (X, 6):</b> Invisible movement, immune to damage.</li>
+          </ul>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Sorbitol</h3>
-          <p class="text-gray-600 mb-2">Ex: Peaches, cherries</p>
-          <p class="text-gray-600">Risks: Digestive issues</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-red-500">Neon</h3>
+            <img src="neon.png" alt="Neon" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Relay Bolt (C, 200):</b> Concussing bolt bounces off walls.</li>
+            <li><b>Fast Lane (Q, 300):</b> Creates two vision-blocking walls.</li>
+            <li><b>High Gear (E, Free):</b> Sprint with slide (2 kills recharge).</li>
+            <li><b>Overdrive (X, 7):</b> High-speed mode with electric weapon.</li>
+          </ul>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-red-500">Iso</h3>
+            <img src="iso.png" alt="Iso" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Contingency (C, 250):</b> Deploys a prismatic energy wall.</li>
+            <li><b>Undercut (Q, 200):</b> Bolt applies vulnerable status.</li>
+            <li><b>Double Tap (E, Free):</b> Buff for orb-collecting damage boost (2 kills recharge).</li>
+            <li><b>Kill Contract (X, 7):</b> 1v1 arena against an enemy.</li>
+          </ul>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-red-500">Waylay</h3>
+            <img src="waylay.png" alt="Waylay" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Ambush (C, 200):</b> Trap slows and reveals enemies.</li>
+            <li><b>Backstab (Q, 250):</b> Throwable knife with teleport on hit.</li>
+            <li><b>Feint (E, Free):</b> Decoy distracts enemies (1 kill recharge).</li>
+            <li><b>Assassin’s Edge (X, 7):</b> Stealth mode with enhanced knife.</li>
+          </ul>
         </div>
       </div>
       <div class="text-center mt-6">
-        <a href="#categories" class="bg-green-600 text-white py-2 px-4 rounded-lg btn fade-in">Return to Main Categories</a>
+        <a href="#categories" class="bg-gray-800 text-white py-2 px-4 rounded-lg btn fade-in">Return to Main Categories</a>
       </div>
     </section>
 
-    <!-- Vegetables Section -->
-    <section class="mb-12 hidden" id="vegetables">
-      <h2 class="text-3xl font-semibold text-green-800 mb-6 text-center fade-in">Harmful Nutrients in Vegetables</h2>
+    <!-- Initiators Section -->
+    <section class="mb-12 hidden" id="initiators">
+      <h2 class="text-3xl font-semibold text-red-500 mb-6 text-center fade-in">Initiators</h2>
+      <p class="text-lg text-gray-300 mb-6 text-center">Initiators gather intel and disrupt enemies to set up team pushes.</p>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Oxalates</h3>
-          <p class="text-gray-600 mb-2">Ex: Spinach, beets</p>
-          <p class="text-gray-600">Risks: Kidney stones</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-blue-500">Sova</h3>
+            <img src="sova.png" alt="Sova" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Shock Bolt (C, 150):</b> Arrow deals damage in an area.</li>
+            <li><b>Recon Bolt (Q, 200):</b> Arrow reveals enemies in range.</li>
+            <li><b>Owl Drone (E, Free):</b> Drone tags enemies (1 kill recharge).</li>
+            <li><b>Hunter’s Fury (X, 8):</b> Long-range energy blasts.</li>
+          </ul>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Nitrates</h3>
-          <p class="text-gray-600 mb-2">Ex: Celery, lettuce</p>
-          <p class="text-gray-600">Risks: Methemoglobinemia</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-blue-500">Breach</h3>
+            <img src="breach.png" alt="Breach" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Aftershock (C, 200):</b> Wall burst damages enemies.</li>
+            <li><b>Flashpoint (Q, 250):</b> Blinding flash through walls.</li>
+            <li><b>Fault Line (E, Free):</b> Concussing seismic blast (1 kill recharge).</li>
+            <li><b>Rolling Thunder (X, 8):</b> Massive concussing shockwave.</li>
+          </ul>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Solanine</h3>
-          <p class="text-gray-600 mb-2">Ex: Green potatoes, tomatoes</p>
-          <p class="text-gray-600">Risks: Neurological issues</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-blue-500">Skye</h3>
+            <img src="skye.png" alt="Skye" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Trailblazer (C, 200):</b> Tiger concusses enemies.</li>
+            <li><b>Guiding Light (Q, 250):</b> Flash hawk blinds enemies.</li>
+            <li><b>Regrowth (E, Free):</b> Heals allies in range (1 kill recharge).</li>
+            <li><b>Seekers (X, 7):</b> Tracks and nearsights enemies.</li>
+          </</ul>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Pesticide Residues</h3>
-          <p class="text-gray-600 mb-2">Ex: Bell peppers, cucumbers</p>
-          <p class="text-gray-600">Risks: Cancer, hormonal disruption</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-blue-500">KAY/O</h3>
+            <img src="kayo.png" alt="KAY/O" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>FRAG/ment (C, 200):</b> Explosive fragment sticks to ground.</li>
+            <li><b>FLASH/drive (Q, 250):</b> Throwable flashbang.</li>
+            <li><b>ZERO/point (E, Free):</b> Blade suppresses enemies (1 kill recharge).</li>
+            <li><b>NULL/cmd (X, 8):</b> Suppresses enemies, boosts KAY/O.</li>
+          </ul>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Goitrogens</h3>
-          <p class="text-gray-600 mb-2">Ex: Broccoli, kale</p>
-          <p class="text-gray-600">Risks: Thyroid dysfunction</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-blue-500">Fade</h3>
+            <img src="fade.png" alt="Fade" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Seize (C, 200):</b> Orb traps and decays enemies.</li>
+            <li><b>Prowler (Q, 250):</b> Creature tracks and nearsights enemies.</li>
+            <li><b>Haunt (E, Free):</b> Reveals enemies in line of sight (1 kill recharge).</li>
+            <li><b>Nightfall (X, 8):</b> Wave decays and deafens enemies.</li>
+          </ul>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Excess Sodium</h3>
-          <p class="text-gray-600 mb-2">Ex: Canned vegetables</p>
-          <p class="text-gray-600">Risks: Hypertension</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-blue-500">Gekko</h3>
+            <img src="gekko.png" alt="Gekko" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Mosh Pit (C, 200):</b> Explosive pit damages enemies.</li>
+            <li><b>Wingman (Q, 300):</b> Creature plants/defuses spike or concusses.</li>
+            <li><b>Dizzy (E, Free):</b> Blinds enemies in line of sight (1 kill recharge).</li>
+            <li><b>Thrash (X, 7):</b> Remote-controlled creature stuns enemies.</li>
+          </ul>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-blue-500">Tejo</h3>
+            <img src="tejo.png" alt="Tejo" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Flamepoint (C, 200):</b> Molotov damages and slows enemies.</li>
+            <li><b>Guided Salvo (Q, 250):</b> Fireballs track enemies.</li>
+            <li><b>Blaze Dash (E, Free):</b> Fiery dash with damage trail (1 kill recharge).</li>
+            <li><b>Inferno Barrage (X, 8):</b> Multiple explosive fireballs.</li>
+          </ul>
         </div>
       </div>
       <div class="text-center mt-6">
-        <a href="#categories" class="bg-green-600 text-white py-2 px-4 rounded-lg btn fade-in">Return to Main Categories</a>
+        <a href="#categories" class="bg-gray-800 text-white py-2 px-4 rounded-lg btn fade-in">Return to Main Categories</a>
       </div>
     </section>
 
-    <!-- Meats Section -->
-    <section class="mb-12 hidden" id="meats">
-      <h2 class="text-3xl font-semibold text-green-800 mb-6 text-center fade-in">Harmful Nutrients in Meats</h2>
+    <!-- Sentinels Section -->
+    <section class="mb-12 hidden" id="sentinels">
+      <h2 class="text-3xl font-semibold text-red-500 mb-6 text-center fade-in">Sentinels</h2>
+      <p class="text-lg text-gray-300 mb-6 text-center">Sentinels lock down areas and provide defensive utility for the team.</p>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Saturated Fats</h3>
-          <p class="text-gray-600 mb-2">Ex: Fatty beef, pork</p>
-          <p class="text-gray-600">Risks: Heart disease</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-green-500">Sage</h3>
+            <img src="sage.png" alt="Sage" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Barrier Orb (C, 400):</b> Creates a solid wall.</li>
+            <li><b>Slow Orb (Q, 200):</b> Slows enemies in an area.</li>
+            <li><b>Healing Orb (E, Free):</b> Heals an ally or self (cooldown).</li>
+            <li><b>Resurrection (X, 7):</b> Revives a dead ally.</li>
+          </ul>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Sodium</h3>
-          <p class="text-gray-600 mb-2">Ex: Processed meats, bacon</p>
-          <p class="text-gray-600">Risks: Hypertension, kidney disease</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-green-500">Cypher</h3>
+            <img src="cypher.png" alt="Cypher" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Trapwire (C, 200):</b> Trap tethers and reveals enemies.</li>
+            <li><b>Cyber Cage (Q, 100):</b> Cage slows enemies passing through.</li>
+            <li><b>Spycam (E, Free):</b> Camera tags enemies (cooldown).</li>
+            <li><b>Neural Theft (X, 6):</b> Reveals enemy locations.</li>
+          </ul>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Nitrates/Nitrites</h3>
-          <p class="text-gray-600 mb-2">Ex: Sausages, hot dogs</p>
-          <p class="text-gray-600">Risks: Cancer</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-green-500">Killjoy</h3>
+            <img src="killjoy.png" alt="Killjoy" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Nanoswarm (C, 200):</b> Grenade damages enemies in range.</li>
+            <li><b>Alarmbot (Q, 200):</b> Bot applies vulnerable to enemies.</li>
+            <li><b>Turret (E, Free):</b> Shoots enemies in range (cooldown).</li>
+            <li><b>Lockdown (X, 8):</b> Detains enemies in a large radius.</li>
+          </ul>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Trans Fats</h3>
-          <p class="text-gray-600 mb-2">Ex: Fried chicken, processed patties</p>
-          <p class="text-gray-600">Risks: Stroke, heart disease</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-green-500">Chamber</h3>
+            <img src="chamber.png" alt="Chamber" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Trademark (C, 200):</b> Trap slows and reveals enemies.</li>
+            <li><b>Headhunter (Q, 100/bullet):</b> Equips a heavy pistol.</li>
+            <li><b>Rendezvous (E, Free):</b> Two teleport anchors (cooldown).</li>
+            <li><b>Tour De Force (X, 8):</b> Sniper rifle with slow field on kill.</li>
+          </ul>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Cholesterol</h3>
-          <p class="text-gray-600 mb-2">Ex: Organ meats, fatty cuts</p>
-          <p class="text-gray-600">Risks: Atherosclerosis</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-green-500">Deadlock</h3>
+            <img src="deadlock.png" alt="Deadlock" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Sonic Sensor (C, 200):</b> Trap concusses nearby enemies.</li>
+            <li><b>Barrier Mesh (Q, 300):</b> Wall blocks movement.</li>
+            <li><b>GravNet (E, Free):</b> Net forces enemies to crouch (1 kill recharge).</li>
+            <li><b>Annihilation (X, 8):</b> Nanowires cocoon an enemy.</li>
+          </ul>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Antibiotics</h3>
-          <p class="text-gray-600 mb-2">Ex: Non-organic poultry</p>
-          <p class="text-gray-600">Risks: Antibiotic resistance</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-green-500">Vyse</h3>
+            <img src="vyse.png" alt="Vyse" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Arc Rose (C, 200):</b> Blinding trap on surfaces, redeployable.</li>
+            <li><b>Shear (Q, 200):</b> Wall trap blocks bullets.</li>
+            <li><b>Razorvine (E, Free):</b> Slows and damages enemies (1 kill recharge).</li>
+            <li><b>Steel Garden (X, 8):</b> Metal spikes disable enemy weapons.</li>
+          </ul>
         </div>
       </div>
       <div class="text-center mt-6">
-        <a href="#categories" class="bg-green-600 text-white py-2 px-4 rounded-lg btn fade-in">Return to Main Categories</a>
+        <a href="#categories" class="bg-gray-800 text-white py-2 px-4 rounded-lg btn fade-in">Return to Main Categories</a>
       </div>
     </section>
 
-    <!-- Junk Food Section -->
-    <section class="mb-12 hidden" id="junkfood">
-      <h2 class="text-3xl font-semibold text-green-800 mb-6 text-center fade-in">Harmful Nutrients in Junk Food</h2>
+    <!-- Controllers Section -->
+    <section class="mb-12 hidden" id="controllers">
+      <h2 class="text-3xl font-semibold text-red-500 mb-6 text-center fade-in">Controllers</h2>
+      <p class="text-lg text-gray-300 mb-6 text-center">Controllers block vision and control map areas to support team strategy.</p>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Trans Fats</h3>
-          <p class="text-gray-600 mb-2">Ex: French fries, donuts</p>
-          <p class="text-gray-600">Risks: Heart disease, stroke</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-yellow-500">Brimstone</h3>
+            <img src="brimstone.png" alt="Brimstone" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Incendiary (C, 250):</b> Molotov damages enemies in area.</li>
+            <li><b>Sky Smoke (Q, 100):</b> Deploys up to three smokes.</li>
+            <li><b>Stim Beacon (E, Free):</b> Boosts fire rate for allies (cooldown).</li>
+            <li><b>Orbital Strike (X, 7):</b> Laser damages in a large area.</li>
+          </ul>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Added Sugars</h3>
-          <p class="text-gray-600 mb-2">Ex: Sodas, candies</p>
-          <p class="text-gray-600">Risks: Diabetes, obesity</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-yellow-500">Viper</h3>
+            <img src="viper.png" alt="Viper" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Poison Cloud (C, 200):</b> Gas emitter blocks vision, decays enemies.</li>
+            <li><b>Toxic Screen (Q, 200):</b> Long gas wall blocks vision, decays.</li>
+            <li><b>Snake Bite (E, Free):</b> Acid pool damages and slows (2 kills recharge).</li>
+            <li><b>Viper’s Pit (X, 8):</b> Toxic cloud highlights enemies to Viper.</li>
+          </ul>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Excess Sodium</h3>
-          <p class="text-gray-600 mb-2">Ex: Chips, fast food burgers</p>
-          <p class="text-gray-600">Risks: Hypertension, heart failure</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-yellow-500">Omen</h3>
+            <img src="omen.png" alt="Omen" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Shrouded Step (C, 150):</b> Short-range teleport.</li>
+            <li><b>Paranoia (Q, 250):</b> Blinding projectile through walls.</li>
+            <li><b>Dark Cover (E, Free):</b> Ascendancy (X, 7):</b> Map-wide teleport with invulnerability.</li>
+          </ul>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Artificial Additives</h3>
-          <p class="text-gray-600 mb-2">Ex: Instant noodles, packaged snacks</p>
-          <p class="text-gray-600">Risks: Allergic reactions, cancer</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-yellow-500">Astra</h3>
+            <img src="astra.png" alt="Astra" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Gravity Well (C, 150):</b> Pulls enemies to center, explodes.</li>
+            <li><b>Nova Pulse (Q, 200):</b> Concusses enemies in an area.</li>
+            <li><b>Nebula/Dissipate (E, Free):</b> Smoke or star recall (1 kill recharge).</li>
+            <li><b>Astral Form (X, 8):</b> Place stars for abilities.</li>
+          </ul>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">Saturated Fats</h3>
-          <p class="text-gray-600 mb-2">Ex: Pizza, fried snacks</p>
-          <p class="text-gray-600">Risks: Heart disease</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-yellow-500">Harbor</h3>
+            <img src="harbor.png" alt="Harbor" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Cove (C, 350):</b> Shielded smoke blocks bullets.</li>
+            <li><b>High Tide (Q, 250):</b> Water wall blocks vision.</li>
+            <li><b>Cascade (E, Free):</b> Slow-moving water wall (1 kill recharge).</li>
+            <li><b>Reckoning (X, 7):</b> Geyser concusses enemies in area.</li>
+          </ul>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
-          <h3 class="text-xl font-bold text-red-600 mb-2">High Fructose Corn Syrup</h3>
-          <p class="text-gray-600 mb-2">Ex: Sweetened beverages, desserts</p>
-          <p class="text-gray-600">Risks: Fatty liver, diabetes</p>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg card-hover fade-in">
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl font-bold text-yellow-500">Clove</h3>
+            <img src="clove.png" alt="Clove" class="agent_img">
+          </div>
+          <ul class="text-gray-300 text-sm">
+            <li><b>Ruse (C, 200):</b> Smokes block vision, usable post-death.</li>
+            <li><b>Meddle (Q, 250):</b> Decays and marks enemies.</li>
+            <li><b>Pick-me-up (E, Free):</b> Speed/health boost from kills/assists.</li>
+            <li><b>Not Dead Yet (X, 7):</b> Self-resurrection after death.</li>
+          </ul>
         </div>
       </div>
       <div class="text-center mt-6">
-        <a href="#categories" class="bg-green-600 text-white py-2 px-4 rounded-lg btn fade-in">Return to Main Categories</a>
+        <a href="#categories" class="bg-gray-800 text-white py-2 px-4 rounded-lg btn fade-in">Return to Main Categories</a>
       </div>
     </section>
 
-    <!-- Tips for Elders -->
-    <section class="mt-12 bg-green-50 p-8 rounded-lg text-center">
-      <h2 class="text-3xl font-semibold text-green-800 mb-4 fade-in">Healthy Eating Tips for Elders</h2>
-      <ul class="text-lg text-gray-700 space-y-2 fade-in" style="animation-delay: 0.3s;">
-        <li>Choose fresh fruits and vegetables like spinach, broccoli, and berries.</li>
-        <li>Opt for whole grains like oats and quinoa instead of processed carbs.</li>
-        <li>Limit junk food and check nutrition labels for sodium and sugar content.</li>
-        <li>Stay hydrated with water instead of sugary drinks.</li>
+    <!-- Tips for Players -->
+    <section class="mt-12 bg-gray-700 p-8 rounded-lg text-center" id="tips">
+      <h2 class="text-3xl font-semibold text-red-500 mb-4 fade-in">Tips for Playing Valorant</h2>
+      <ul class="text-lg text-gray-300 space-y-2 fade-in" style="animation-delay: 0.3s;">
+        <li>Choose agents that match your playstyle (e.g., Jett for mobility, Sage for support).</li>
+        <li>Coordinate with your team to combine abilities effectively.</li>
+        <li>Practice aim and map knowledge to maximize agent utility.</li>
+        <li>Use Spike Rush or Unrated to test new agents and strategies.</li>
       </ul>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="bg-green-600 text-white py-4 text-center">
-    <p class="fade-in">© 2025 Nutrition for Elders. All rights reserved.</p>
+  <footer class="bg-gray-800 text-white py-4 text-center">
+    <p class="fade-in">© 2025 Valorant Agents Guide. All rights reserved.</p>
   </footer>
 
   <!-- JavaScript for Navigation -->
@@ -241,13 +455,20 @@
         const targetId = link.getAttribute('href').substring(1);
         const targetSection = document.getElementById(targetId);
         document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
-        targetSection.classList.remove('hidden');
+        if (targetId === 'categories') {
+          document.getElementById('introduction').classList.remove('hidden');
+          document.getElementById('categories').classList.remove('hidden');
+          document.getElementById('tips').classList.remove('hidden');
+        } else {
+          targetSection.classList.remove('hidden');
+        }
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     });
-    // Show introduction and categories by default
+    // Show introduction, categories, and tips by default
     document.getElementById('introduction').classList.remove('hidden');
     document.getElementById('categories').classList.remove('hidden');
+    document.getElementById('tips').classList.remove('hidden');
   </script>
 </body>
 </html>

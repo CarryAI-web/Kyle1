@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrition Risks for Elders</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-out forwards;
+    }
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .btn {
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-green-100 to-blue-100 font-sans">
+  <!-- Header -->
+  <header class="bg-green-600 text-white py-6 text-center">
+    <h1 class="text-4xl font-bold fade-in">Nutrition Risks for Elders</h1>
+    <p class="mt-2 text-lg fade-in" style="animation-delay: 0.3s;">Understanding Harmful Nutrients in Foods</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto p-6">
+    <!-- Introduction -->
+    <section class="mb-12 text-center" id="introduction">
+      <h2 class="text-3xl font-semibold text-green-800 mb-4 fade-in" style="animation-delay: 0.6s;">Why Nutrition Matters for Elders</h2>
+      <p class="text-lg text-gray-700 fade-in" style="animation-delay: 0.9s;">
+        Proper nutrition is vital for older adults to maintain health and vitality. However, certain foods contain harmful nutrients that can increase the risk of serious diseases like heart disease, diabetes, and hypertension. This guide explores dangerous nutrients found in fruits, vegetables, meats, and junk foods, helping elders make informed dietary choices to support long-term well-being.
+      </p>
+    </section>
+
+    <!-- Food Categories -->
+    <section class="mb-12 text-center" id="categories">
+      <h2 class="text-3xl font-semibold text-green-800 mb-6 fade-in" style="animation-delay: 1.2s;">Explore Food Categories</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <a href="#fruits" class="bg-yellow-400 text-white py-4 rounded-lg btn card-hover fade-in" style="animation-delay: 1.5s;">Fruits</a>
+        <a href="#vegetables" class="bg-green-400 text-white py-4 rounded-lg btn card-hover fade-in" style="animation-delay: 1.8s;">Vegetables</a>
+        <a href="#meats" class="bg-red-400 text-white py-4 rounded-lg btn card-hover fade-in" style="animation-delay: 2.1s;">Meats</a>
+        <a href="#junkfood" class="bg-purple-400 text-white py-4 rounded-lg btn card-hover fade-in" style="animation-delay: 2.4s;">Junk Food</a>
+      </div>
+    </section>
+
+    <!-- Fruits Section -->
+    <section class="mb-12 hidden" id="fruits">
+      <h2 class="text-3xl font-semibold text-green-800 mb-6 text-center fade-in">Harmful Nutrients in Fruits</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Excess Sugars</h3>
+          <p class="text-gray-600 mb-2">Ex: Dried fruits, canned fruits in syrup</p>
+          <p class="text-gray-600">Risks: Type 2 diabetes, obesity</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Pesticide Residues</h3>
+          <p class="text-gray-600 mb-2">Ex: Non-organic apples, grapes</p>
+          <p class="text-gray-600">Risks: Neurological issues, cancer</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">High Fructose</h3>
+          <p class="text-gray-600 mb-2">Ex: Mangoes, pineapples</p>
+          <p class="text-gray-600">Risks: Fatty liver disease</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Oxalates</h3>
+          <p class="text-gray-600 mb-2">Ex: Starfruit, rhubarb</p>
+          <p class="text-gray-600">Risks: Kidney stones</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Allergens</h3>
+          <p class="text-gray-600 mb-2">Ex: Citrus fruits, strawberries</p>
+          <p class="text-gray-600">Risks: Allergic reactions</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Sorbitol</h3>
+          <p class="text-gray-600 mb-2">Ex: Peaches, cherries</p>
+          <p class="text-gray-600">Risks: Digestive issues</p>
+        </div>
+      </div>
+      <div class="text-center mt-6">
+        <a href="#categories" class="bg-green-600 text-white py-2 px-4 rounded-lg btn fade-in">Return to Main Categories</a>
+      </div>
+    </section>
+
+    <!-- Vegetables Section -->
+    <section class="mb-12 hidden" id="vegetables">
+      <h2 class="text-3xl font-semibold text-green-800 mb-6 text-center fade-in">Harmful Nutrients in Vegetables</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Oxalates</h3>
+          <p class="text-gray-600 mb-2">Ex: Spinach, beets</p>
+          <p class="text-gray-600">Risks: Kidney stones</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Nitrates</h3>
+          <p class="text-gray-600 mb-2">Ex: Celery, lettuce</p>
+          <p class="text-gray-600">Risks: Methemoglobinemia</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Solanine</h3>
+          <p class="text-gray-600 mb-2">Ex: Green potatoes, tomatoes</p>
+          <p class="text-gray-600">Risks: Neurological issues</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Pesticide Residues</h3>
+          <p class="text-gray-600 mb-2">Ex: Bell peppers, cucumbers</p>
+          <p class="text-gray-600">Risks: Cancer, hormonal disruption</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Goitrogens</h3>
+          <p class="text-gray-600 mb-2">Ex: Broccoli, kale</p>
+          <p class="text-gray-600">Risks: Thyroid dysfunction</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Excess Sodium</h3>
+          <p class="text-gray-600 mb-2">Ex: Canned vegetables</p>
+          <p class="text-gray-600">Risks: Hypertension</p>
+        </div>
+      </div>
+      <div class="text-center mt-6">
+        <a href="#categories" class="bg-green-600 text-white py-2 px-4 rounded-lg btn fade-in">Return to Main Categories</a>
+      </div>
+    </section>
+
+    <!-- Meats Section -->
+    <section class="mb-12 hidden" id="meats">
+      <h2 class="text-3xl font-semibold text-green-800 mb-6 text-center fade-in">Harmful Nutrients in Meats</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Saturated Fats</h3>
+          <p class="text-gray-600 mb-2">Ex: Fatty beef, pork</p>
+          <p class="text-gray-600">Risks: Heart disease</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Sodium</h3>
+          <p class="text-gray-600 mb-2">Ex: Processed meats, bacon</p>
+          <p class="text-gray-600">Risks: Hypertension, kidney disease</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Nitrates/Nitrites</h3>
+          <p class="text-gray-600 mb-2">Ex: Sausages, hot dogs</p>
+          <p class="text-gray-600">Risks: Cancer</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Trans Fats</h3>
+          <p class="text-gray-600 mb-2">Ex: Fried chicken, processed patties</p>
+          <p class="text-gray-600">Risks: Stroke, heart disease</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Cholesterol</h3>
+          <p class="text-gray-600 mb-2">Ex: Organ meats, fatty cuts</p>
+          <p class="text-gray-600">Risks: Atherosclerosis</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Antibiotics</h3>
+          <p class="text-gray-600 mb-2">Ex: Non-organic poultry</p>
+          <p class="text-gray-600">Risks: Antibiotic resistance</p>
+        </div>
+      </div>
+      <div class="text-center mt-6">
+        <a href="#categories" class="bg-green-600 text-white py-2 px-4 rounded-lg btn fade-in">Return to Main Categories</a>
+      </div>
+    </section>
+
+    <!-- Junk Food Section -->
+    <section class="mb-12 hidden" id="junkfood">
+      <h2 class="text-3xl font-semibold text-green-800 mb-6 text-center fade-in">Harmful Nutrients in Junk Food</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Trans Fats</h3>
+          <p class="text-gray-600 mb-2">Ex: French fries, donuts</p>
+          <p class="text-gray-600">Risks: Heart disease, stroke</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Added Sugars</h3>
+          <p class="text-gray-600 mb-2">Ex: Sodas, candies</p>
+          <p class="text-gray-600">Risks: Diabetes, obesity</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Excess Sodium</h3>
+          <p class="text-gray-600 mb-2">Ex: Chips, fast food burgers</p>
+          <p class="text-gray-600">Risks: Hypertension, heart failure</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Artificial Additives</h3>
+          <p class="text-gray-600 mb-2">Ex: Instant noodles, packaged snacks</p>
+          <p class="text-gray-600">Risks: Allergic reactions, cancer</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Saturated Fats</h3>
+          <p class="text-gray-600 mb-2">Ex: Pizza, fried snacks</p>
+          <p class="text-gray-600">Risks: Heart disease</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+          <h3 class="text-xl font-bold text-red-600 mb-2">High Fructose Corn Syrup</h3>
+          <p class="text-gray-600 mb-2">Ex: Sweetened beverages, desserts</p>
+          <p class="text-gray-600">Risks: Fatty liver, diabetes</p>
+        </div>
+      </div>
+      <div class="text-center mt-6">
+        <a href="#categories" class="bg-green-600 text-white py-2 px-4 rounded-lg btn fade-in">Return to Main Categories</a>
+      </div>
+    </section>
+
+    <!-- Tips for Elders -->
+    <section class="mt-12 bg-green-50 p-8 rounded-lg text-center">
+      <h2 class="text-3xl font-semibold text-green-800 mb-4 fade-in">Healthy Eating Tips for Elders</h2>
+      <ul class="text-lg text-gray-700 space-y-2 fade-in" style="animation-delay: 0.3s;">
+        <li>Choose fresh fruits and vegetables like spinach, broccoli, and berries.</li>
+        <li>Opt for whole grains like oats and quinoa instead of processed carbs.</li>
+        <li>Limit junk food and check nutrition labels for sodium and sugar content.</li>
+        <li>Stay hydrated with water instead of sugary drinks.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-green-600 text-white py-4 text-center">
+    <p class="fade-in">© 2025 Nutrition for Elders. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Navigation -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+        targetSection.classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+    // Show introduction and categories by default
+    document.getElementById('introduction').classList.remove('hidden');
+    document.getElementById('categories').classList.remove('hidden');
+  </script>
+</body>
+</html>
