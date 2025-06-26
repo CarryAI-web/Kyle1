@@ -12,7 +12,7 @@
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
   <!-- API Key (BASE64 encoded) -->
   <script>
-    const ENCODED_API_KEY = 'c2stb3ItdjEtN2VlMzNjNDFjNDBiYWJlNDk2MGZlMjEyMzZlZTczYjQxMTljNjMzMjQ5OWJhNWNhZTJlMGRiZDQxMWUyYjc5Mg=='; // Replace with your BASE64-encoded OpenRouter API key
+    const ENCODED_API_KEY = 'c2stb3ItdjEtN2VlMzNjNDFjNDBiYWJlNDk2MGZlMjEyMzZlZTczYjQxMTljNjMzMjQ5OWJhNWNhZTJlMGRiZDQxMWUyYjc5Mg==';
   </script>
   <div id="root"></div>
   <script type="text/babel">
@@ -86,7 +86,7 @@
               if (key === 'heart_disease') return '心臟病';
               if (key === 'kidney_disease') return '腎病';
             });
-          const prompt = `提供食物 "${foodQuery}" 的成分、營養信息（卡路里、蛋白質、脂肪、碳水化合物、鈉、糖）以及是否適合患有以下疾病的長者食用：${selectedConditions.join(', ') || '無特定疾病'}。以 JSON 格式返回，包含食物名稱、成分、營養信息和適合性分析。`;
+          const prompt = `提供食物 "${foodQuery}" 的成分、營養信息（卡路里、蛋白質、脂肪、碳水化合物、鈉、糖）以及是否適合患有以下疾病的長者食用：${selectedConditions.join(', ') || '無特定疾病'}。以 JSON 格式返回，包含食物名稱、成分、營養信息和適合性分析，使用繁體中文。`;
 
           const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
             method: 'POST',
@@ -95,14 +95,22 @@
               'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-              model: 'google/gemini-2.5-pro-exp-03-25', // Adjust model as needed
+              model: 'google/gemini-2.5-pro-exp-03-25',
               messages: [{ role: 'user', content: prompt }],
             }),
           });
 
           const data = await response.json();
           if (data.choices && data.choices[0].message.content) {
-            const result = JSON.parse(data.choices[0].message.content);
+            let result;
+            try {
+              result = JSON.parse(data.choices[0].message.content);
+            } catch (err) {
+              setError('API 回應格式錯誤，請稍後再試。');
+              setNutritionData(null);
+              setLoading(false);
+              return;
+            }
             setNutritionData(result.food);
           } else {
             setNutritionData(null);
@@ -115,6 +123,12 @@
           setLoading(false);
         }
       };
+
+      // Refresh tip on page reload
+      React.useEffect(() => {
+        setCurrentTip(healthTips[Math.floor(Math.random() * healthTips.length)]);
+        setShowTip(true);
+      }, []);
 
       return (
         <div className="relative">
@@ -200,4 +214,4 @@
     ReactDOM.render(<App />, document.getElementById('root'));
   </script>
 </body>
-</html
+</html>
